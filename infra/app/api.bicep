@@ -16,6 +16,6 @@ module api '../core/host/appservice.bicep' = {
     tags: union(tags, { 'azd-service-name': serviceName })
     // applicationInsightName: applicationInsightName
     appServicePlanId: appServicePlanId
-    linuxFxVersion: 'DOTNETCORE|7.0'
+    linuxFxVersion: 'DOTNETCORE|6.0'
   }
 }
