@@ -8,15 +8,22 @@
 	},
 	"features": {
 		"ghcr.io/devcontainers/features/dotnet:1": {},
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers/features/azure-cli:1": {}
 	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-azuretools.vscode-docker"
+				"ms-azuretools.vscode-docker",
+				"ms-azuretools.vscode-bicep",
+				"ms-azuretools.azure-dev",
+				"redhat.vscode-yaml"
 			]
 		}
-	}
+	},
+	"hostRequirements": {
+		"memory": "8gb"
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -31,5 +38,6 @@
 	// "customizations": {},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	"containerUser": "root",
+	"remoteUser": "root"
 }

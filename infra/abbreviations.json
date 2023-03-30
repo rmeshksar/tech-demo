@@ -1,0 +1,6 @@
+{
+    "resourcesResourceGroups": "rg-",
+    "webServerFarms": "plan-",
+    "insightsComponents": "appi-",
+    "operationalInsightsWorkspaces": "log-"
+}
