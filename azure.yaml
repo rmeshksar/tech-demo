@@ -6,7 +6,7 @@ services:
     project: ./src/api
     language: csharp
     host: appservice
-    module: app/api
+
 pipeline:
   provider: github
 
